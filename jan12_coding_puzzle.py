@@ -30,3 +30,24 @@ sum_of_integers(a)
 
 sum_of_integers(a_str)
 
+# Alternative Solution
+
+# User Input
+
+def sum_of_integers():
+  """to find the sum from 0 to n"""
+  try:
+    num =input()
+    int_num = int(num)
+  except:
+    print('wrong input ... Bye !!')
+    return
+  sum = 0
+  for add in range(1,int_num + 1):
+    print(f' adding {sum} and {add}')
+    sum += add
+    print(sum)
+    print('=============')
+  return sum
+
+sum_of_integers()
